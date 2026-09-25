@@ -61,12 +61,14 @@ REPOS_TO_SUITES = {
     "InfinityExpansion-drake": {"suite": "drakes-tech", "module": "infinity", "pkg": "infinity"},
     "DynaTech-drake": {"suite": "drakes-tech", "module": "dynatech", "pkg": "dynatech"},
     "Supreme-Drake": {"suite": "drakes-tech", "module": "supreme", "pkg": "supreme"},
+    "SensibleToolbox-drake": {"suite": "drakes-tech", "module": "sensibletoolbox", "pkg": "sensibletoolbox"},
     
     # Suite 6: Combat
     "ExtraGear-drake": {"suite": "drakes-combat", "module": "extragear", "pkg": "extragear"},
     "SFMobDrops-drake": {"suite": "drakes-combat", "module": "mobdrops", "pkg": "mobdrops"},
     "Slimefun-Disc-drake": {"suite": "drakes-combat", "module": "slimefundisc", "pkg": "slimefundisc"},
     "SlimefunWarfare-Drake": {"suite": "drakes-combat", "module": "warfare", "pkg": "warfare"},
+    "SlimeTinker-drake": {"suite": "drakes-combat", "module": "slimetinker", "pkg": "slimetinker"},
     "DrakesBosses": {"suite": "drakes-combat", "module": "drakes_bosses", "pkg": "bosses"},
     
     # Suite Multiverse
