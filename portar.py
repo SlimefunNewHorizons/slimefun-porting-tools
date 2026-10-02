@@ -104,7 +104,7 @@ DEPS_ADDON = {
 
 MAVEN_DRAKE = """        <repository>
             <id>drakescraft-labs-maven</id>
-            <url>https://drakescraft-labs.github.io/maven-repo/</url>
+            <url>https://maven.drakescraft.cl/</url>
         </repository>
 """
 
@@ -320,7 +320,7 @@ def portar_pom(repo, escribir):
                    "<artifactId>paperlib</artifactId>\n            <version>1.0.8</version>",
                    texto)
 
-    if "drakescraft-labs.github.io/maven-repo" not in texto:
+    if "maven.drakescraft.cl/" not in texto:
         texto = texto.replace("<repositories>", "<repositories>\n" + MAVEN_DRAKE, 1)
 
     # paper-api tambien arrastra `net.md-5:bungeecord-chat`, que vive en el repo de PaperMC. Si el
