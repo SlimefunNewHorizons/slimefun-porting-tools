@@ -4,7 +4,7 @@
 POR QUE ASI Y NO CAMBIANDO DE CORE
 
 Ya se intento adoptar su core entero y se cayeron los addons: nuestro fork repaqueto Slimefun a
-`com.github.drakescraft_labs` y los ~40 addons de DrakesCraft-Labs estan compilados contra esos
+`com.github.drakescraft_labs` y los ~40 addons de SlimefunNewHorizons estan compilados contra esos
 nombres. Traer la capa DENTRO de nuestro core mantiene la ABI intacta y nadie se entera.
 
 QUE SE TRAE

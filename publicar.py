@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Publica en DrakesCraft-Labs un addon ya portado a 1.21.11.
+"""Publica en SlimefunNewHorizons un addon ya portado a 1.21.11.
 
 No se hace fork: se crea un repositorio nuevo con el codigo integrado al ecosistema Drake, y se
 acredita al autor original en el README y en un fichero aparte, como exige la GPL y como
@@ -13,7 +13,7 @@ import shutil
 import subprocess
 import sys
 
-ORG = "DrakesCraft-Labs"
+ORG = "SlimefunNewHorizons"
 
 
 def sh(*args, cwd=None, check=True):

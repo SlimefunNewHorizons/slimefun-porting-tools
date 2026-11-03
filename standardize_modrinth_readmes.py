@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """standardize_modrinth_readmes.py
 
-Standardizes all DrakesCraft-Labs repositories for Modrinth publication & Creator Rewards:
+Standardizes all SlimefunNewHorizons repositories for Modrinth publication & Creator Rewards:
 1. Detects Spanish README.md files and preserves them 100% in README_ES.md.
 2. Generates canonical international technical English README.md files adhering to Modrinth
    guidelines (2.1, 4, 5.9, 6) and AGENTS.md Rule 6.
@@ -469,11 +469,11 @@ def clean_conflict_markers(text: str) -> str:
 def get_repo_banner_markdown(repo_dir: pathlib.Path, repo_name: str) -> str:
     """Returns markdown for the repo's banner image if available."""
     if (repo_dir / "banner.svg").exists():
-        return f'<img src="https://raw.githubusercontent.com/DrakesCraft-Labs/{repo_name}/main/banner.svg" alt="{repo_name} Banner" width="920" />'
+        return f'<img src="https://raw.githubusercontent.com/SlimefunNewHorizons/{repo_name}/main/banner.svg" alt="{repo_name} Banner" width="920" />'
     elif (repo_dir / "docs" / "banner.png").exists():
-        return f'<img src="https://raw.githubusercontent.com/DrakesCraft-Labs/{repo_name}/main/docs/banner.png" alt="{repo_name} Banner" width="920" />'
+        return f'<img src="https://raw.githubusercontent.com/SlimefunNewHorizons/{repo_name}/main/docs/banner.png" alt="{repo_name} Banner" width="920" />'
     elif (repo_dir / "banner.png").exists():
-        return f'<img src="https://raw.githubusercontent.com/DrakesCraft-Labs/{repo_name}/main/banner.png" alt="{repo_name} Banner" width="920" />'
+        return f'<img src="https://raw.githubusercontent.com/SlimefunNewHorizons/{repo_name}/main/banner.png" alt="{repo_name} Banner" width="920" />'
     return ""
 
 
@@ -542,7 +542,7 @@ def generate_canonical_english_readme(repo_dir: pathlib.Path, repo_name: str, sp
 **{tagline}**
 
 <p>
-  <a href="https://github.com/DrakesCraft-Labs/{repo_name}"><img src="https://img.shields.io/badge/GitHub-{clean_name}-181717?style=for-the-badge&logo=github" alt="GitHub"/></a>
+  <a href="https://github.com/SlimefunNewHorizons/{repo_name}"><img src="https://img.shields.io/badge/GitHub-{clean_name}-181717?style=for-the-badge&logo=github" alt="GitHub"/></a>
   <img src="https://img.shields.io/badge/Slimefun4-Drake_Edition-22C55E?style=for-the-badge&logo=curseforge&logoColor=white" alt="Slimefun4"/>
   <img src="https://img.shields.io/badge/Paper-1.21.11-38BDF8?style=for-the-badge&logo=minecraft&logoColor=white" alt="Paper 1.21.11"/>
   <img src="https://img.shields.io/badge/Java-21-F89820?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java 21"/>
@@ -580,14 +580,14 @@ def generate_canonical_english_readme(repo_dir: pathlib.Path, repo_name: str, sp
 |---|---|
 | **Server Software** | Paper / Purpur / Folia **1.21.11** |
 | **Java Runtime** | **Java 21** LTS |
-| **Required Core** | [Slimefun4-Drake](https://github.com/DrakesCraft-Labs/Slimefun4-Drake) |
+| **Required Core** | [Slimefun4-Drake](https://github.com/SlimefunNewHorizons/Slimefun4-Drake) |
 | **Architecture** | 100% Server-Side (Vanilla Minecraft clients can join without installing client mods) |
 
 ---
 
 ## 📥 Installation
 
-1. Download the latest release `.jar` from the [Releases](https://github.com/DrakesCraft-Labs/{repo_name}/releases) tab or [Modrinth](https://modrinth.com/organization/drakescraft-labs).
+1. Download the latest release `.jar` from the [Releases](https://github.com/SlimefunNewHorizons/{repo_name}/releases) tab or [Modrinth](https://modrinth.com/organization/drakescraft-labs).
 2. Place the `.jar` into your server's `plugins/` directory alongside `Slimefun4-Drake.jar`.
 3. Start or restart your server. Recipes and machines will appear automatically in the Slimefun guide (`/sf guide`).
 
@@ -596,7 +596,7 @@ def generate_canonical_english_readme(repo_dir: pathlib.Path, repo_name: str, sp
 ## 🛠️ Building from Source
 
 ```bash
-git clone https://github.com/DrakesCraft-Labs/{repo_name}.git
+git clone https://github.com/SlimefunNewHorizons/{repo_name}.git
 cd {repo_name}
 {build_cmd}
 ```
@@ -607,7 +607,7 @@ The compiled artifact will be located under `{build_artifact}`.
 
 <div align="center">
 
-**Developed and Maintained by [DrakesCraft Labs](https://github.com/DrakesCraft-Labs)**  
+**Developed and Maintained by [DrakesCraft Labs](https://github.com/SlimefunNewHorizons)**  
 Licensed under **{lic}**.
 
 </div>
@@ -616,7 +616,7 @@ Licensed under **{lic}**.
 
 ## 📄 License & Upstream Attribution
 
-This project is a sovereign fork maintained by [**JackStar6677-1**](https://github.com/JackStar6677-1) under [**DrakesCraft Labs**](https://github.com/DrakesCraft-Labs).
+This project is a sovereign fork maintained by [**JackStar6677-1**](https://github.com/JackStar6677-1) under [**DrakesCraft Labs**](https://github.com/SlimefunNewHorizons).
 
 - **Original Project:** Created by the upstream authors and the open-source community ([Upstream Repository]({upstream_url})).
 - **DrakesCraft Optimizations:** Modernized for Paper/Purpur 1.21.11+, Java 21 LTS, high concurrency, asynchronous safety, and exploit/duplication prevention.
@@ -783,7 +783,7 @@ def process_repository(
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Standardize Modrinth READMEs and CI across DrakesCraft-Labs")
+    parser = argparse.ArgumentParser(description="Standardize Modrinth READMEs and CI across SlimefunNewHorizons")
     parser.add_argument("--dry-run", action="store_true", help="Preview actions without modifying files")
     parser.add_argument("--apply", action="store_true", help="Apply modifications to files")
     parser.add_argument("--commit", action="store_true", help="Commit changes via Git")

@@ -4,7 +4,7 @@
 #   <Addon>/      los clones originales de la cosecha, tal cual vinieron de upstream
 #
 # Ninguno de los dos tiene sitio aqui: el codigo de cada addon vive en su repositorio de
-# DrakesCraft-Labs, y los originales se vuelven a clonar cuando hagan falta.
+# SlimefunNewHorizons, y los originales se vuelven a clonar cuando hagan falta.
 limpio/
 _upstream-intake/
 __pycache__/
